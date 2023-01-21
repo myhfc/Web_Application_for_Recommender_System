@@ -32,7 +32,6 @@ def index():
         print( user_id)
         #rs_type = request.form["rs_type"]
         result_pred = predict(user_id)
-        print(result_pred)
 
         return render_template('index.html', data=data, userId=user_id, result_pred=result_pred, predict=True)
     else:
@@ -43,7 +42,8 @@ def index():
 def hello(name: str):
     return f"hello {name}"
 
-"""if __name__ == '__main__':
-    port = int(os.environ.get('PORT',5000))
+if __name__ == '__main__':
+    app.run()
+    """port = int(os.environ.get('PORT',5000))
     app.run(host="0.0.0.0", port=port, debug=True)
-"""
+    """
