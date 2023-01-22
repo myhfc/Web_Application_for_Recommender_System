@@ -37,7 +37,7 @@
 								<div class="row  p-3">
 									<label for="user_id">Choose an User ID :</label>
 									<select id="user_id" name="user_id">
-										{% for user_id in data.user_id.unique(): %}
+										{% for user_id in range(70): %}
 										<option value="{{user_id}}">{{user_id }} </option>
 										{% endfor %}
 									</select> 
