@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 #import azure.functions as func
-from flask import (Flask, render_template ,request, url_for, send_from_directory)
+from flask import (Flask, render_template )#,request, url_for, send_from_directory)
 
 app = Flask(__name__)
 
