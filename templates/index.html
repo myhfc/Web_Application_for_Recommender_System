@@ -36,7 +36,8 @@
 								<div class="row  p-3">
 									<label for="user_id">Choose an User ID :</label>
 									<select id="user_id" name="user_id">
-										{% for user_id in range(70): %}
+
+										{% for user_id in range(90): %}
 										<option value="{{user_id}}">{{user_id }} </option>
 										{% endfor %}
 									</select> 
@@ -69,7 +70,7 @@
 					<div class="p-3 bg-primary text-white">
 						<h3>  <span style="color: rgb(0, 87, 90);"> Recommended Articles for User ID : {{userId}} </span> </h3>
 						<div class="col-sm-10">
-							{% for art_id in result_pred: %}
+							{% for art_id in recommended_articles : %}
 								<p name="predicted tweet"> Article N° : {{art_id}} </p> 
 							{% endfor %}
 						</div>
